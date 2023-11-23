@@ -14,7 +14,7 @@ struct Item: Identifiable {
 }
 
 struct ContentView: View {
-    private let items = createItems()
+    private let items = createPassingItems()
     
     var body: some View {
         Map(
@@ -25,10 +25,21 @@ struct ContentView: View {
         }
     }
     
-    private static func createItems() -> [Item] {
+    private static func createFailingItems() -> [Item] {
         var res: [Item] = []
         stride(from: -50, through: 50, by: 5).forEach { lat in
             stride(from: -50, through: 100, by: 5).forEach { long in
+                res.append(Item(coord: CLLocationCoordinate2D(latitude: lat, longitude: long)))
+            }
+        }
+        
+        return res
+    }
+    
+    private static func createPassingItems() -> [Item] {
+        var res: [Item] = []
+        stride(from: -20, through: 20, by: 5).forEach { lat in
+            stride(from: -50, through: 0, by: 5).forEach { long in
                 res.append(Item(coord: CLLocationCoordinate2D(latitude: lat, longitude: long)))
             }
         }

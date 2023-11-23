@@ -11,7 +11,19 @@
 		E8D7B02A2B0FDCC30040C934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D7B0292B0FDCC30040C934 /* ContentView.swift */; };
 		E8D7B02C2B0FDCC40040C934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D7B02B2B0FDCC40040C934 /* Assets.xcassets */; };
 		E8D7B02F2B0FDCC40040C934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D7B02E2B0FDCC40040C934 /* Preview Assets.xcassets */; };
+		E8D7B03C2B0FE02C0040C934 /* ScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D7B03B2B0FE02C0040C934 /* ScreenshotTests.swift */; };
+		E8D7B0452B0FE04D0040C934 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D7B0442B0FE04D0040C934 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8D7B03F2B0FE02C0040C934 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8D7B01C2B0FDCC30040C934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8D7B0232B0FDCC30040C934;
+			remoteInfo = MapViewSnasphot;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E8D7B0242B0FDCC30040C934 /* MapViewSnasphot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapViewSnasphot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +31,20 @@
 		E8D7B0292B0FDCC30040C934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8D7B02B2B0FDCC40040C934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8D7B02E2B0FDCC40040C934 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8D7B0392B0FE02C0040C934 /* ScreenshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D7B03B2B0FE02C0040C934 /* ScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTests.swift; sourceTree = "<group>"; };
+		E8D7B0442B0FE04D0040C934 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E8D7B0212B0FDCC30040C934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D7B0362B0FE02C0040C934 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				E8D7B0262B0FDCC30040C934 /* MapViewSnasphot */,
+				E8D7B03A2B0FE02C0040C934 /* ScreenshotTests */,
 				E8D7B0252B0FDCC30040C934 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				E8D7B0242B0FDCC30040C934 /* MapViewSnasphot.app */,
+				E8D7B0392B0FE02C0040C934 /* ScreenshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +91,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E8D7B03A2B0FE02C0040C934 /* ScreenshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8D7B0442B0FE04D0040C934 /* SnapshotHelper.swift */,
+				E8D7B03B2B0FE02C0040C934 /* ScreenshotTests.swift */,
+			);
+			path = ScreenshotTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +120,24 @@
 			productReference = E8D7B0242B0FDCC30040C934 /* MapViewSnasphot.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E8D7B0382B0FE02C0040C934 /* ScreenshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D7B0412B0FE02C0040C934 /* Build configuration list for PBXNativeTarget "ScreenshotTests" */;
+			buildPhases = (
+				E8D7B0352B0FE02C0040C934 /* Sources */,
+				E8D7B0362B0FE02C0040C934 /* Frameworks */,
+				E8D7B0372B0FE02C0040C934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8D7B0402B0FE02C0040C934 /* PBXTargetDependency */,
+			);
+			name = ScreenshotTests;
+			productName = ScreenshotTests;
+			productReference = E8D7B0392B0FE02C0040C934 /* ScreenshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +150,10 @@
 				TargetAttributes = {
 					E8D7B0232B0FDCC30040C934 = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					E8D7B0382B0FE02C0040C934 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = E8D7B0232B0FDCC30040C934;
 					};
 				};
 			};
@@ -116,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				E8D7B0232B0FDCC30040C934 /* MapViewSnasphot */,
+				E8D7B0382B0FE02C0040C934 /* ScreenshotTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +183,13 @@
 			files = (
 				E8D7B02F2B0FDCC40040C934 /* Preview Assets.xcassets in Resources */,
 				E8D7B02C2B0FDCC40040C934 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D7B0372B0FE02C0040C934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +205,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8D7B0352B0FE02C0040C934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D7B03C2B0FE02C0040C934 /* ScreenshotTests.swift in Sources */,
+				E8D7B0452B0FE04D0040C934 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8D7B0402B0FE02C0040C934 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8D7B0232B0FDCC30040C934 /* MapViewSnasphot */;
+			targetProxy = E8D7B03F2B0FE02C0040C934 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E8D7B0302B0FDCC40040C934 /* Debug */ = {
@@ -322,6 +402,44 @@
 			};
 			name = Release;
 		};
+		E8D7B0422B0FE02C0040C934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.finnebeling.ScreenshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MapViewSnasphot;
+			};
+			name = Debug;
+		};
+		E8D7B0432B0FE02C0040C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.finnebeling.ScreenshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MapViewSnasphot;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +457,15 @@
 			buildConfigurations = (
 				E8D7B0332B0FDCC40040C934 /* Debug */,
 				E8D7B0342B0FDCC40040C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8D7B0412B0FE02C0040C934 /* Build configuration list for PBXNativeTarget "ScreenshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8D7B0422B0FE02C0040C934 /* Debug */,
+				E8D7B0432B0FE02C0040C934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
