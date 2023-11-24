@@ -25,6 +25,7 @@ struct ContentView: View {
         }
     }
     
+    /// Creates 651 items
     private static func createFailingItems() -> [Item] {
         var res: [Item] = []
         stride(from: -50, through: 50, by: 5).forEach { lat in
@@ -36,6 +37,7 @@ struct ContentView: View {
         return res
     }
     
+    /// Creates 99 items
     private static func createPassingItems() -> [Item] {
         var res: [Item] = []
         stride(from: -20, through: 20, by: 5).forEach { lat in

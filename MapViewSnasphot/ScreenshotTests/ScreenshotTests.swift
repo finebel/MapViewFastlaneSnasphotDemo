@@ -22,7 +22,7 @@ final class ScreenshotTests: XCTestCase {
 //        let app = XCUIApplication()
 //        app.launch()
 //        
-//        sleep(2)
+//        sleep(2) // wait for annotations to load
 //        let image = XCUIScreen.main.screenshot().image
 //        
 //        let path = URL.documentsDirectory.appending(path: "sampleScreenshot.png")
