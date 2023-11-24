@@ -14,7 +14,7 @@ struct Item: Identifiable {
 }
 
 struct ContentView: View {
-    private let items = createFailingItems()
+    private let items = createFailingItems() // createPassingItems()
     
     var body: some View {
         Map(

@@ -18,14 +18,15 @@ final class ScreenshotTests: XCTestCase {
         snapshot("0-demoScreenshot")
     }
     
-    func testManualScreenshot() {
-        let app = XCUIApplication()
-        app.launch()
-        
-        let image = XCUIScreen.main.screenshot().image
-        
-        let path = URL.documentsDirectory.appending(path: "sampleScreenshot.png")
-        print(path)
-        try? image.pngData()?.write(to: path, options: .atomic)
-    }
+//    func testManualScreenshot() {
+//        let app = XCUIApplication()
+//        app.launch()
+//        
+//        sleep(2)
+//        let image = XCUIScreen.main.screenshot().image
+//        
+//        let path = URL.documentsDirectory.appending(path: "sampleScreenshot.png")
+//        print(path)
+//        try? image.pngData()?.write(to: path, options: .atomic)
+//    }
 }
